@@ -1,10 +1,12 @@
 [user]
     name = Pierre Dulac
     email = dulacpier@gmail.com
+    
 [core]
     autocrlf = input
     safecrlf = false
-    excludesfile = ~/.gitignore_global
+    excludesfile = /opt/boxen/config/git/gitignore
+
 [alias]
     co = checkout
     ci = commit
@@ -14,6 +16,7 @@
     type = cat-file -t
     dump = cat-file -p
     today = !git log --since=midnight --author=\"$(git config user.name)\" --oneline
+
 [color]
     branch = auto
     diff = auto
@@ -32,10 +35,14 @@
     added = yellow
     changed = green
     untracked = cyan
+
 [apply]
-    whitespace = warn
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
+
 [diff]
     tool = vimdiff
+
 [push]
     default = simple
 
