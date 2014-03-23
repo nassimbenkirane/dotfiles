@@ -84,6 +84,9 @@ set scrolloff=3
 
 " Automatic commands
 if has("autocmd")
+    " Enable plugins
+    filetype indent plugin on    
+
     " Enable file type detection
     filetype on
     " Treat .json files as .js
