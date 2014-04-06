@@ -47,7 +47,7 @@
     default = simple
 
 [credential]
-    helper = /opt/boxen/bin/boxen-git-credential
+helper = /opt/boxen/bin/boxen-git-credential
 
 [hub]
     protocol = https
