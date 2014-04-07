@@ -72,3 +72,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+#
+# If we have boxen installed, source the Boxen environment
+#
+if [ -f /opt/boxen/env.sh ]; then
+  source /opt/boxen/env.sh
+fi
